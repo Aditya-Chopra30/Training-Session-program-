@@ -1,0 +1,13 @@
+class Solution
+{
+    boolean checkIsAP(int arr[] ,int n)
+    {
+        Arrays.sort(arr);
+        for(int x=0;x<n-2;x++)
+        {
+            if(arr[x+1]-arr[x] != arr[x+2]-arr[x+1])
+            return false;
+        }
+         return true;
+    }
+}
